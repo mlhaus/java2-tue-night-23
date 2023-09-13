@@ -4,10 +4,18 @@ import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class BankAccount {
+public class BankAccount implements Cloneable {
     private double balance;
 
     public BankAccount(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
@@ -27,5 +35,14 @@ public class BankAccount {
         // Source: https://stackoverflow.com/questions/2379221/how-to-format-decimals-in-a-currency-format
         NumberFormat formatter2 = NumberFormat.getCurrencyInstance();
         return "Your balance on " + today.format(formatter) + " is " + formatter2.format(balance);
+    }
+
+    @Override
+    public BankAccount clone() {
+        try{
+            return (BankAccount) super.clone();
+        } catch(CloneNotSupportedException e){
+            throw new RuntimeException(e);
+        }
     }
 }
