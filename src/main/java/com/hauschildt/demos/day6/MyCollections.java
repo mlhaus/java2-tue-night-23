@@ -1,7 +1,5 @@
 package com.hauschildt.day6;
 
-import com.hauschildt.day2.BankAccount;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
