@@ -1,4 +1,4 @@
-package com.hauschildt.day2;
+package com.hauschildt.demos.day2;
 
 public class Game_App {
     public static void main(String[] args) {

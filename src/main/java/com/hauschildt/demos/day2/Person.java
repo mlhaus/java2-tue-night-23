@@ -1,4 +1,4 @@
-package com.hauschildt.day2;
+package com.hauschildt.demos.day2;
 
 //Consider the following Person class.
 public class Person {

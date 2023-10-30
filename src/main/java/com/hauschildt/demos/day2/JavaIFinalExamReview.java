@@ -1,4 +1,4 @@
-package com.hauschildt.day2;
+package com.hauschildt.demos.day2;
 
 public class JavaIFinalExamReview {
     public static void main(String[] args) {

@@ -42,6 +42,10 @@ public class Fraction {
         return gcd;
     }
 
+    public String mixedNumber() {
+        return "";
+    }
+
     public String toString() {
         return this.numerator + "/" + this.denominator;
     }
